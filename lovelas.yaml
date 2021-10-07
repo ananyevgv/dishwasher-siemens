@@ -1,0 +1,111 @@
+type: picture-elements
+image: |
+  /local/21390.970.jpg
+style: |
+  ha-card {
+    background-color: rgba(0,0,0,0.6);
+  }
+elements:
+  - type: custom:circle-sensor-card
+    entity: sensor.posudomoechnaia_mashina_program_progress
+    fill: rgba(40, 40, 49, 0.6)
+    font_style:
+      font-color: white
+      font-size: 2em
+      line-height: 1.2
+      text-align: center
+      text-shadow: 1px 1px black
+    gradient: true
+    min: 0
+    show_card: false
+    stroke_width: 15
+    style:
+      align: center
+      left: 35%
+      top: 50%
+      width: 70%
+  - type: state-label
+    tap_action:
+      action: toggle
+    entity: sensor.posudomoechnaia_mashina_operation_state
+    style:
+      top: 22%
+      left: 10%
+      font-size: 10px
+  - type: state-label
+    tap_action:
+      action: toggle
+    entity: sensor.posuda_time
+    style:
+      top: 25%
+      left: 51%
+  - type: state-icon
+    tap_action:
+      action: toggle
+    entity: binary_sensor.posudomoechnaia_mashina_remote_control
+    style:
+      top: 32%
+      left: 10%
+      font-size: 10px
+  - type: state-icon
+    tap_action:
+      action: toggle
+    entity: binary_sensor.posudomoechnaia_mashina_door
+    style:
+      top: 42%
+      left: 10%
+      font-size: 10px
+  - type: state-icon
+    tap_action:
+      action: toggle
+    entity: binary_sensor.posudomoechnaia_mashina_remote_start
+    style:
+      top: 22%
+      left: 85%
+      font-size: 10px
+  - type: state-icon
+    tap_action:
+      action: toggle
+    entity: switch.posudomoechnaia_mashina_power
+    style:
+      align: left
+      left: 10%
+      top: 12%
+  - type: state-icon
+    icon: mdi:arm-flex
+    tap_action:
+      action: toggle
+    entity: switch.posudomoechnaia_mashina_program_intensiv70
+    style:
+      align: left
+      left: 60%
+      top: 77%
+      width: 85%
+  - type: state-icon
+    icon: mdi:leaf
+    tap_action:
+      action: toggle
+    entity: switch.posudomoechnaia_mashina_program_eco50
+    style:
+      align: left
+      left: 80%
+      top: 77%
+      width: 85%
+  - type: state-icon
+    icon: mdi:glass-cocktail
+    tap_action:
+      action: toggle
+    entity: switch.posudomoechnaia_mashina_program_glas40
+    style:
+      align: left
+      left: 100%
+      top: 77%
+      width: 85%
+  - type: state-icon
+    icon: mdi:clock-fast
+    entity: switch.posudomoechnaia_mashina_program_quick65
+    style:
+      align: left
+      left: 120%
+      top: 77%
+      width: 85%

@@ -1,0 +1,6 @@
+sensor:
+  - platform: template 
+    sensors:
+      posuda_time:
+        value_template: >
+          {{ as_timestamp(states('sensor.posudomoechnaia_mashina_remaining_program_time')) | timestamp_custom('%Y-%m-%d %H:%M:%S')  }}

@@ -7,6 +7,17 @@
          {% else %}
            {{ as_timestamp(states('sensor.posudomoechnaia_mashina_remaining_program_time')) | timestamp_custom('%H:%M')  }}
          {% endif %}
+         
+  - platform: template 
+    sensors:
+      posuda_time_end:
+      value_template: >
+          {% if is_state('sensor.posudomoechnaia_mashina_remaining_program_time', 'unavailable') %}
+            --:--
+          {% else %}
+           {{ as_timestamp(now()) -  as_timestamp(states('sensor.posudomoechnaia_mashina_remaining_program_time')) | timestamp_custom('%H:%M')  }}
+          {% endif %}
+          
   - platform: template
     sensors:
       blank:

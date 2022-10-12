@@ -25,47 +25,36 @@ elements:
       top: 50%
       width: 70%
   - type: state-label
-    tap_action:
-      action: toggle
     entity: sensor.posudomoechnaia_mashina_operation_state
     style:
       top: 22%
       left: 10%
       font-size: 10px
   - type: state-label
-    tap_action:
-      action: toggle
-    entity: sensor.posuda_time
+    entity: sensor.posuda_time_end
     style:
+      font-size: 25px
       top: 25%
-      left: 51%
+      left: 49%
   - type: state-icon
-    tap_action:
-      action: toggle
     entity: binary_sensor.posudomoechnaia_mashina_remote_control
     style:
       top: 32%
       left: 10%
       font-size: 10px
   - type: state-icon
-    tap_action:
-      action: toggle
     entity: binary_sensor.posudomoechnaia_mashina_door
     style:
       top: 42%
       left: 10%
       font-size: 10px
   - type: state-icon
-    tap_action:
-      action: toggle
     entity: binary_sensor.posudomoechnaia_mashina_remote_start
     style:
       top: 22%
       left: 85%
       font-size: 10px
   - type: state-icon
-    tap_action:
-      action: toggle
     entity: switch.posudomoechnaia_mashina_power
     style:
       align: left
@@ -73,8 +62,6 @@ elements:
       top: 12%
   - type: state-icon
     icon: mdi:arm-flex
-    tap_action:
-      action: toggle
     entity: switch.posudomoechnaia_mashina_program_intensiv70
     style:
       align: left
@@ -83,8 +70,6 @@ elements:
       width: 85%
   - type: state-icon
     icon: mdi:leaf
-    tap_action:
-      action: toggle
     entity: switch.posudomoechnaia_mashina_program_eco50
     style:
       align: left
@@ -93,8 +78,6 @@ elements:
       width: 85%
   - type: state-icon
     icon: mdi:glass-cocktail
-    tap_action:
-      action: toggle
     entity: switch.posudomoechnaia_mashina_program_glas40
     style:
       align: left
@@ -109,7 +92,6 @@ elements:
       left: 120%
       top: 77%
       width: 85%
-      
   - type: state-label
     entity: sensor.blank
     prefix: '88:88'

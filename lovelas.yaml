@@ -109,3 +109,23 @@ elements:
       left: 120%
       top: 77%
       width: 85%
+      
+  - type: state-label
+    entity: sensor.blank
+    prefix: '18:88'
+    style:
+      color: '#555'
+      font-family: segment7
+      font-size: 15px
+      left: 83%
+      top: 7.4%
+      transform: translate(-100%,-50%)
+  - type: state-label
+    entity: sensor.posuda_time
+    style:
+      color: '#8df427'
+      font-family: segment7
+      font-size: 15px
+      left: 83%
+      top: 7.4%
+      transform: translate(-100%,-50%)

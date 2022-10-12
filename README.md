@@ -4,6 +4,8 @@
 https://www.home-assistant.io/integrations/home_connect/
 
 ## 
+| ON                                                                                     | OFF                                                                          |
+|----------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 ![ON] (https://github.com/ananyevgv/dishwasher-siemens/blob/main/foto.jpg)
 ![OFF] (https://github.com/ananyevgv/dishwasher-siemens/blob/main/foto2.jpg) 
 

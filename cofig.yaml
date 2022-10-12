@@ -11,7 +11,7 @@
   - platform: template 
     sensors:
       posuda_time_end:
-      value_template: >
+        value_template: >
           {% if is_state('sensor.posudomoechnaia_mashina_remaining_program_time', 'unavailable') %}
             --:--
           {% else %}

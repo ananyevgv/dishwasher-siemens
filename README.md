@@ -17,3 +17,4 @@ https://www.home-assistant.io/integrations/home_connect/
 7segment font (c) Jan Bobrowski (OFL) - http://torinak.com/7segment
 
 https://github.com/alryaz/lg-washer-dryer-card
+https://github.com/custom-cards/circle-sensor-card

@@ -1,6 +1,6 @@
 type: picture-elements
 image: |
-  /local/21390.970.jpg
+  /local/siemens.jpg
 style: |
   ha-card {
     background-color: rgba(0,0,0,0.6);

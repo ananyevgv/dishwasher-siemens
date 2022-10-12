@@ -2,9 +2,9 @@
 
 Добавление посудомоечной машины siemens в lovelas home assistent c использованием интеграции 
 https://www.home-assistant.io/integrations/home_connect/
-| Front                                                                    | Top   
+| ON                                                                    | OFF  
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------
-| ![Front](https://github.com/ananyevgv/dishwasher-siemens/blob/main/foto.jpg height="300" ) |  ![Top](https://github.com/ananyevgv/dishwasher-siemens/blob/main/foto2.jpg" height="300")
+| ![ON] ("https://github.com/ananyevgv/dishwasher-siemens/blob/main/foto.jpg" height="300" ) |  ![OFF] (https://github.com/ananyevgv/dishwasher-siemens/blob/main/foto2.jpg" height="300")
 Загрузите в /config/www  7segment.css, 7segment.woff, siemens.jpg
 
 На панели управления Lovelace щелкните три точки в правом верхнем углу и выберите Редактировать панель управления. Теперь снова щелкните три точки и выберите пункт Управление ресурсами. Нажмите Добавить ресурс в правом нижнем углу, затем введите /local/7 segment.css и убедитесь, что для типа задано значение Stylesheet. Сохраните запись.

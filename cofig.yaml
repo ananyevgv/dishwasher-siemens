@@ -15,7 +15,7 @@
           {% if is_state('sensor.posudomoechnaia_mashina_remaining_program_time', 'unavailable') %}
             --:--
           {% else %}
-           {{ as_timestamp(now()) -  as_timestamp(states('sensor.posudomoechnaia_mashina_remaining_program_time')) | timestamp_custom('%H:%M')  }}
+           {{(  as_timestamp(states('sensor.posudomoechnaia_mashina_remaining_program_time')) - as_timestamp(now()) - 60*60*3 ) | timestamp_custom('%H:%M')  }}
           {% endif %}
           
   - platform: template 

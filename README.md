@@ -3,7 +3,7 @@
 Добавление посудомоечной машины siemens в lovelas home assistent c использованием интеграции 
 https://www.home-assistant.io/integrations/home_connect/
 | Front                                                                    | Top   
-
+|----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------
 | ![Front](https://github.com/ananyevgv/dishwasher-siemens/blob/main/foto.jpg) |  ![Top](https://github.com/ananyevgv/dishwasher-siemens/blob/main/foto2.jpg" )
 Загрузите в /config/www  7segment.css, 7segment.woff, siemens.jpg
 

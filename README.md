@@ -4,6 +4,7 @@
 https://www.home-assistant.io/integrations/home_connect/
 
 <img src="https://github.com/ananyevgv/dishwasher-siemens/blob/main/foto.jpg" height="300" alt="Посудомойка">
+<img src="https://github.com/ananyevgv/dishwasher-siemens/blob/main/foto2.jpg" height="300" alt="Посудомойка">
 
 Загрузите в /config/www  7segment.css, 7segment.woff, siemens.jpg
 

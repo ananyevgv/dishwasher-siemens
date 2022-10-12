@@ -112,7 +112,7 @@ elements:
       
   - type: state-label
     entity: sensor.blank
-    prefix: '18:88'
+    prefix: '88:88'
     style:
       color: '#555'
       font-family: segment7

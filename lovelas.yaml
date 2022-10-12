@@ -7,7 +7,7 @@ style: |
   }
 elements:
   - type: custom:circle-sensor-card
-    entity: sensor.posudomoechnaia_mashina_program_progress
+    entity: sensor.posuda_progress
     fill: rgba(40, 40, 49, 0.6)
     font_style:
       font-color: white

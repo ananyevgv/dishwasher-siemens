@@ -2,7 +2,7 @@
     sensors:
       posuda_time:
         value_template: >
-         {% if is_state('sensor.posudomoechnaia_mashina_remaining_program_time', 'unavailable') %}
+         {% if is_state('sensor.posudomoechnaia_mashina_operation_state', 'Inactive') %}
           --:--
          {% else %}
            {{ as_timestamp(states('sensor.posudomoechnaia_mashina_remaining_program_time')) | timestamp_custom('%H:%M')  }}
@@ -12,7 +12,7 @@
     sensors:
       posuda_time_end:
         value_template: >
-          {% if is_state('sensor.posudomoechnaia_mashina_remaining_program_time', 'unavailable') %}
+          {% if is_state('sensor.posudomoechnaia_mashina_operation_state', 'Inactive') %}
             --:--
           {% else %}
            {{(  as_timestamp(states('sensor.posudomoechnaia_mashina_remaining_program_time')) - as_timestamp(now()) - 60*60*3 ) | timestamp_custom('%H:%M')  }}
@@ -22,7 +22,7 @@
     sensors:
       posuda_progress:
         value_template: >
-          {% if is_state('sensor.posudomoechnaia_mashina_program_progress', 'unavailable') %}
+          {% if is_state('sensor.posudomoechnaia_mashina_operation_state', 'Inactive') %}
             --
           {% else %}
            {{ states('sensor.posudomoechnaia_mashina_program_progress') }}

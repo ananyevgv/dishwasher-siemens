@@ -15,9 +15,9 @@ https://www.home-assistant.io/integrations/home_connect/
 
 Добовляем сенсоры в configuration.yaml из cofig.yaml
 
-{{(  as_timestamp(states('sensor.posudomoechnaia_mashina_remaining_program_time')) - as_timestamp(now()) - 60*60*3 ) | timestamp_custom('%H:%M')  }}
+{{(  as_timestamp(states('sensor.posudomoechnaia_mashina_remaining_program_time')) - as_timestamp(now()) - 60x60x3 ) | timestamp_custom('%H:%M')  }}
 
-60*60*3 (скорее всего проблема с таймзоной),вылечил пока так... (у вас может быть другое значение, 3 количество часов разночтения)
+60x60x3 (скорее всего проблема с таймзоной),вылечил пока так... (у вас может быть другое значение, 3 количество часов разночтения)
 
 # Notes
 7segment font (c) Jan Bobrowski (OFL) - http://torinak.com/7segment

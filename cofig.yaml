@@ -2,31 +2,31 @@
     sensors:
       posuda_time:
         value_template: >
-         {% if is_state('sensor.posudomoechnaia_mashina_operation_state', 'Inactive') %}
-          --:--
-         {% else %}
+         {% if is_state('sensor.posudomoechnaia_mashina_operation_state', 'Run') %}
            {{ as_timestamp(states('sensor.posudomoechnaia_mashina_remaining_program_time')) | timestamp_custom('%H:%M')  }}
+         {% else %}
+           --:-- 
          {% endif %}
-         
   - platform: template 
     sensors:
       posuda_time_end:
         value_template: >
-          {% if is_state('sensor.posudomoechnaia_mashina_operation_state', 'Inactive') %}
-            --:--
+          {% if is_state('sensor.posudomoechnaia_mashina_operation_state', 'Run') %}
+            {{ (  as_timestamp(states('sensor.posudomoechnaia_mashina_remaining_program_time')) - as_timestamp(now()) - 60*60*3 ) | timestamp_custom('%H:%M')  }}
           {% else %}
-           {{(  as_timestamp(states('sensor.posudomoechnaia_mashina_remaining_program_time')) - as_timestamp(now()) - 60*60*3 ) | timestamp_custom('%H:%M')  }}
+            --:--
           {% endif %}
-          
+
   - platform: template 
     sensors:
       posuda_progress:
         value_template: >
-          {% if is_state('sensor.posudomoechnaia_mashina_operation_state', 'Inactive') %}
-            --
+          {% if is_state('sensor.posudomoechnaia_mashina_operation_state', 'Run') %}
+            {{ states('sensor.posudomoechnaia_mashina_program_progress') }}
           {% else %}
-           {{ states('sensor.posudomoechnaia_mashina_program_progress') }}
+           0
           {% endif %}
+        unit_of_measurement: "%" 
 
  
   - platform: template
